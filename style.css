@@ -1,20 +1,42 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsla(303, 73%, 71%, 0.357);
+}
 .cell{
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     border: 2px solid;
     box-shadow: 0 0 0 2px;
-    line-height: 75px;
-    font-size: 50px;
+    line-height: 100px;
+    font-size: 28px;
     cursor: pointer;
+    color: hsl(122, 90%, 15%);
 
 }
 #gameContainer{
-    font-family: "Permanent Marker", cursive;
+    font-family: Optima, sans-serif;
     text-align: center;
+    color: hsl(122, 90%, 15%);
 }
 #cellContainer{
     display: grid;
     grid-template-columns: repeat(3, auto);
-    width: 225px;
+    width: 300px;
     margin: auto;
+}
+button{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: Optima, sans-serif;
+    font-size: 20px;
+    background-color: hsl(314, 59%, 80%);
+    border: none;
+    cursor: pointer;
+    color: hsl(122, 90%, 15%);
+    font-weight: bold;
 }

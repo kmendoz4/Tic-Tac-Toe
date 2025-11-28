@@ -13,7 +13,7 @@ const winConditions = [
 ];
 
 let options = ["", "", "", "", "", "", "", "", ""];
-let currentPlayer = "X";
+let currentPlayer = "Elphaba";
 let running = false;
 
 initializeGame();
@@ -42,7 +42,7 @@ function updateCell(cell, index){
 }
 
 function changePlayer(){
-    currentPlayer = (currentPlayer == "X") ? "O" : "X";
+    currentPlayer = (currentPlayer == "Elphaba") ? "Glinda" : "Elphaba";
     statusText.textContent = `${currentPlayer}'s turn`; 
 }
 
